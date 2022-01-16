@@ -10,7 +10,7 @@ def test_pay_of():
     tax_rate = 0.1
     pay_calculator = PayCalculator(tax_rate)
     # 직원 John의 기본급은 1,000,000원이다.
-    employee = Employee("John", 1000000)
+    employee = Employee("John", Pay(1000000))
 
     # when
 
@@ -29,7 +29,7 @@ def test_pay_of_with_rspec():
     # 소득세율이 10%일 때
     pay_calculator.tax_rate = 0.1
     # 직원의 기본급이 1,000,000원일 때
-    employee = Employee("John", 1000000)
+    employee = Employee("John", Pay(1000000))
 
     # It
     # 900,000원의 급여를 반환한다.
