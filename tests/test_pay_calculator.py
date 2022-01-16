@@ -25,12 +25,14 @@ def test_pay_of():
 def test_pay_of_with_rspec():
     # Describe
     # PayCalculator의 pay_of 메소드는
+    pay_calculator = PayCalculator(0)
 
     # Context
     # 소득세율이 10%일 때
+    pay_calculator.tax_rate = 0.1
     # 직원의 기본급이 1,000,000원일 때
-
+    employee = Employee("John", 1000000)
 
     # It
     # 900,000원의 급여를 반환한다.
-    pass
+    assert pay_calculator.pay_of(employee) == Pay(900000)
