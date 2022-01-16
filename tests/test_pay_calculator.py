@@ -1,11 +1,9 @@
 from examples.ch07.calculator import PayCalculator
 from examples.ch07.employee import Employee
-
-
-# given-when-then pattern
 from examples.ch07.pay import Pay
 
 
+# given-when-then pattern
 def test_pay_of():
     # given
     # 소득세율은 10%이다.
