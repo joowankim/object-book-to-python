@@ -7,4 +7,4 @@ class PayCalculator:
         self.tax_rate = tax_rate
 
     def pay_of(self, employee: Employee) -> Pay:
-        pass
+        return 1000000 - 1000000 * 0.1
