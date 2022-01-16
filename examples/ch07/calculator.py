@@ -7,4 +7,4 @@ class PayCalculator:
         self.tax_rate = tax_rate
 
     def pay_of(self, employee: Employee) -> Pay:
-        return (1 - self.tax_rate) * employee.base_pay
+        return Pay((1 - self.tax_rate) * employee.base_pay)
